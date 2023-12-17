@@ -36,7 +36,7 @@ jobs:
           CW_LLVM_MINGW_DL: '1'
           CW_LLVM_MINGW_ONLY: '0'
         run: |
-          export CW_CONFIG='${{ github.ref_name }}-win-gcc-x86-msvcrt-pico'
+          export CW_CONFIG='${{ github.ref_name }}-win-gcc-x86-msvcrt-pico-osnotls-libressl'
           export CW_REVISION='${{ github.sha }}'
           . ./_versions.sh
           docker trust inspect --pretty "${DOCKER_IMAGE}"
