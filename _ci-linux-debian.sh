@@ -38,7 +38,7 @@ if [[ "${CW_CONFIG:-}" = *'win'* ]]; then
     elif [[ "${CW_CONFIG:-}" = *'boringssl'* ]]; then
       extra+=' binutils-mingw-w64-i686'
     fi
-    extra+=' wine32'
+    #extra+=' wine32'
   fi
   # https://tracker.debian.org/pkg/osslsigncode
   extra+=' osslsigncode'
