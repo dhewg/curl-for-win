@@ -147,7 +147,7 @@ cat <<EOF
   },
   {
     "name": "llvm-mingw-linux-x86-64",
-    "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/{ver}/llvm-mingw-{ver}-ucrt-ubuntu-22.04-x86_64.tar.xz"
+    "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/{ver}/llvm-mingw-{ver}-msvcrt-ubuntu-22.04-x86_64.tar.xz"
   },
   {
     "name": "llvm-mingw-linux-aarch64",

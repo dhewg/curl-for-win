@@ -624,9 +624,8 @@ build_single_target() {
   if [ "${_OS}" = 'win' ]; then
     if [ "${use_llvm_mingw}" = '1' ]; then
       if [ "${_CC}" != 'llvm' ] || \
-         [ "${_CRT}" != 'ucrt' ] || \
          [ -z "${CW_LLVM_MINGW_PATH:-}" ]; then
-        echo "! WARNING: '${_CONFIG}/${_CPU}' builds require llvm/clang, UCRT and CW_LLVM_MINGW_PATH. Skipping."
+        echo "! WARNING: '${_CONFIG}/${_CPU}' builds require llvm/clang and CW_LLVM_MINGW_PATH. Skipping."
         return
       fi
       _TOOLCHAIN='llvm-mingw'
